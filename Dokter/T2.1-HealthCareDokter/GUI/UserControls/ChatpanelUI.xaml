@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="T2._1_HealthCareDokter.GUI.UserControls.ChatpanelUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:T2._1_HealthCareDokter"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Selectionbox -->
+        <ComboBox Name="SessionSelectionBox" Style="{StaticResource generalComboBox}" Margin="0,0,0,10" Grid.Row="0"/>
+
+        <!-- Chat window -->
+        <TextBox Name="ChatView" TextWrapping="Wrap" Focusable="False" FontSize="14" VerticalScrollBarVisibility="Visible" Margin="0,0,0,10" Grid.Row="1" BorderBrush="Black" BorderThickness="1"/>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" Background="White"/>
+
+                <!-- Add the messagebox -->
+                <TextBlock Text="Type a message..." Style="{StaticResource Body}" Foreground="LightGray" Margin="5, 5, 0, 0" Height="30"/>
+
+                <!-- Add the TextBox for the messagbox -->
+                <TextBox x:Name="MessageBox" Style="{StaticResource generalTextInput}" VerticalContentAlignment="Center" KeyDown="MessageBox_KeyDown" Grid.Column="0" />
+
+                <!--Send Button -->
+                <Button Name="SendButton" Style="{StaticResource generalButton}" Click="SendButton_Click" Margin="10,0,0,0" Grid.Row="2" Grid.Column="1">
+                    <ContentControl Style="{StaticResource sendIcon}" Height="30"/>
+                </Button>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</UserControl>

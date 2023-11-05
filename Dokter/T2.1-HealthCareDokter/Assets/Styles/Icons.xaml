@@ -1,0 +1,309 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Logout Icon -->
+    <Style x:Key="logoutIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 780 -120 q 24 0 42 -18 18 -18 18 -42 v -600 q 0 -24 -18 -42 -18 -18 -42 -18 H 481 v 60 h 299 v 600 H 481 v 60 z m -486 -185 43 -43 -102 -102 h 365 v -60 H 237 l 102 -102 -43 -43 -176 176 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Close Icon -->
+    <Style x:Key="closeIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- Stop Icon -->
+    <Style x:Key="stopIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg243" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path241" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="M240-240v-480h480v480H240Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Clock Icon -->
+    <Style x:Key="clock" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 627 -287 45 -45 -159 -160 v -201 h -60 v 225 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Heart Rate Icon -->
+    <Style x:Key="heart_rate" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White">
+                                <Path.Data>
+                                    <PathGeometry Figures="M645-840q100 0 167.5 74T880-590q0 18-2 35.5t-7 34.5H621l-68-102q-5-8-14-13t-19-5q-13 0-23.5 8T482-612l-54 162-35-52q-5-8-14-13t-19-5H89q-5-17-7-34.5T80-589q0-103 67-177t167-74q48 0 90.5 19t75.5 53q32-34 74.5-53t90.5-19ZM480-120q-18 0-34.5-6.5T416-146L148-415q-6-6-11-12t-10-13h211l68 102q5 8 14 13t19 5q13 0 24-8t15-20l54-162 34 52q6 8 15 13t19 5h232l-10 12-10 12-269 270q-13 13-29 19.5t-34 6.5Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Send Icon -->
+    <Style x:Key="sendIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="M120-160v-245l302-75-302-77v-243l760 320-760 320Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Distance Icon -->
+    <Style x:Key="distanceIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <!--Unknown tag: sodipodi:namedview-->
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White">
+                                <Path.Data>
+                                    <PathGeometry Figures="M480-80q-106 0-173-31t-67-79q0-27 24.5-51t67.5-39l18 58q-16 5-29.5 14T299-190q17 20 70.5 35T480-140q57 0 111-15t71-35q-8-8-21-17t-30-15l17-58q43 15 67.5 39t24.5 51q0 48-67 79T480-80Zm0-106q-12 0-21-7t-13-18q-24-73-60-121t-70-92q-34-44-58-91.5T234-634q0-103 71.5-174.5T480-880q103 0 174.5 71.5T726-634q0 71-24 118.5T644-424q-34 44-70 92t-60 121q-4 11-13 18t-21 7Zm0-388q25 0 42.5-17.5T540-634q0-25-17.5-42.5T480-694q-25 0-42.5 17.5T420-634q0 25 17.5 42.5T480-574Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Pause Icon -->
+    <Style x:Key="pauseIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="M555-200v-560h175v560H555Zm-325 0v-560h175v560H230Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Play Icon -->
+    <Style x:Key="playIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="M320-203v-560l440 280-440 280Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Speed Icon -->
+    <Style x:Key="speedIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White">
+                                <Path.Data>
+                                    <PathGeometry Figures="M63-537 0-600q93-95 218-147.5T480-800q24 0 54 1.5t62 5.5l-42 86q-18-2-36-2.5t-38-.5q-119 0-225.5 46T63-537Zm123 118-63-63q69-67 165.5-102T508-611l-39 81q-77-2-154.5 29T186-419Zm258 255q-27-11-39.5-41t1.5-59l237-490q3-7 10.5-10t15.5-1q8 2 13 9t3 15L547-206q-8 32-41 42.5t-62-.5Zm330-255q-16-17-44.5-37T681-485l21-86q35 12 73 38.5t62 50.5l-63 63Zm123-118q-39-38-85-69t-88-50l22-90q65 27 116 63.5t98 82.5l-63 63Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- today Icon -->
+    <Style x:Key="todayIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="White">
+                                <Path.Data>
+                                    <PathGeometry Figures="M352.817-310Q312-310 284-338.183q-28-28.183-28-69T284.183-476q28.183-28 69-28T422-475.817q28 28.183 28 69T421.817-338q-28.183 28-69 28ZM180-80q-24 0-42-18t-18-42v-620q0-24 18-42t42-18h65v-60h65v60h340v-60h65v60h65q24 0 42 18t18 42v620q0 24-18 42t-42 18H180Zm0-60h600v-430H180v430Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- Error Icon -->
+    <Style x:Key="errorIcon" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+
+                    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+                        <Canvas Name="svg4" Width="960" Height="960">
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="0" Y="960"/>
+                            </Canvas.RenderTransform>
+                            <Canvas.Resources/>
+                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path2" Fill="#000000">
+                                <Path.Data>
+                                    <PathGeometry Figures="M450-380v-380h60v380h-60Zm0 180v-60h60v60h-60Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Viewbox>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

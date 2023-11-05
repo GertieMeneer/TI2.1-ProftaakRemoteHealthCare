@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{273F2752-B78C-44BB-AA74-F24D03891CC8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TI2._1_HealthCareClient</RootNamespace>
+    <AssemblyName>TI2.1-HealthCareClient</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TI2._1_HealthCareClient.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLELibrary">
+      <HintPath>.\BLELibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLEConnection\Devices\BicycleEmulator.cs" />
+    <Compile Include="BLEConnection\Devices\EmulatorUtility.cs" />
+    <Compile Include="BLEConnection\Devices\HeartRateMonitorEmulator.cs" />
+    <Compile Include="BLEConnection\FEData.cs" />
+    <Compile Include="BLEConnection\Translator\BicycleTranslator.cs" />
+    <Compile Include="BLEConnection\DeviceType.cs" />
+    <Compile Include="BLEConnection\Translator\HeartRateMonitorTranslator.cs" />
+    <Compile Include="BLEConnection\Devices\FitnessBLE.cs" />
+    <Compile Include="BLEConnection\Devices\IBLEDevice.cs" />
+    <Compile Include="ConsoleApp\PatientSetup.cs" />
+    <Compile Include="ConsoleApp\VRSetup.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionConnectBike\ConnectionConnectBike.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionConnectPatient\ConnectionConnectPatient.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionConnectPatient\DataAttributes\TypeDataAttribute.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionDisconnectBike\ConnectionDisconnectBike.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionDisconnectPatient\ConnectionDisconnectPatient.cs" />
+    <Compile Include="ServerConnection\Commands\ConnectionDisconnectPatient\DataAttributes\InfoDataAttribute.cs" />
+    <Compile Include="ServerConnection\Commands\DataSend\DataAttributes\AllDataAttribute.cs" />
+    <Compile Include="ServerConnection\Commands\DataSend\DataSend.cs" />
+    <Compile Include="ServerConnection\Commands\IServerCommand.cs" />
+    <Compile Include="ServerConnection\Commands\DOKTERCOMMANDS\SessionStart\DataAttributes\PatientIdDataAttribute.cs" />
+    <Compile Include="ServerConnection\Commands\DOKTERCOMMANDS\SessionStart\SessionStart.cs" />
+    <Compile Include="ServerConnection\Commands\DOKTERCOMMANDS\SessionStop\DataAttributes\SessionStopDataAttributes.cs" />
+    <Compile Include="ServerConnection\Commands\DOKTERCOMMANDS\SessionStop\SessionStop.cs" />
+    <Compile Include="ServerConnection\ServerClientConnection.cs" />
+    <Compile Include="VRConnection\Commands\General\Pause.cs" />
+    <Compile Include="VRConnection\Commands\General\DataAttributes\PlayDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\General\DataAttributes\PauseDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\General\Play.cs" />
+    <Compile Include="VRConnection\Commands\General\DataAttributes\TunnelCreateDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\General\DataAttributes\TunnelSendDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\General\SessionList.cs" />
+    <Compile Include="VRConnection\Commands\General\TunnelCreate.cs" />
+    <Compile Include="VRConnection\Commands\General\TunnelSend.cs" />
+    <Compile Include="VRConnection\Commands\IVRCommand.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponents.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponentsModel.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponentsPanel.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponentsTerrain.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponentsTransform.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddDataAttributeComponentsWater.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeAddLayerDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeDeleteDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeFindDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeUpdateDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\DataAttributes\SceneNodeUpdateTransformDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Node\SceneNodeAdd.cs" />
+    <Compile Include="VRConnection\Commands\Node\SceneNodeAddLayer.cs" />
+    <Compile Include="VRConnection\Commands\Node\SceneNodeDelete.cs" />
+    <Compile Include="VRConnection\Commands\Node\SceneNodeFind.cs" />
+    <Compile Include="VRConnection\Commands\Node\SceneNodeUpdate.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelClearDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelDrawLinesDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelDrawTextDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelImageDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelImage.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelSetClearColorDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\DataAttributes\ScenePanelSwapDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelClear.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelDrawLines.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelDrawText.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelSetClearColor.cs" />
+    <Compile Include="VRConnection\Commands\Panel\ScenePanelSwap.cs" />
+    <Compile Include="VRConnection\Commands\Road\DataAttributes\SceneRoadAddDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Road\SceneRoadAdd.cs" />
+    <Compile Include="VRConnection\Commands\Route\RouteAdd.cs" />
+    <Compile Include="VRConnection\Commands\Route\DataAttributes\RouteAddDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Route\DataAttributes\RouteAddDataAttributeNode.cs" />
+    <Compile Include="VRConnection\Commands\Route\DataAttributes\RouteFollowDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Route\DataAttributes\RouteFollowSpeedDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Route\DataAttributes\RouteShowDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Route\RouteFollow.cs" />
+    <Compile Include="VRConnection\Commands\Route\RouteFollowSpeed.cs" />
+    <Compile Include="VRConnection\Commands\Route\RouteShow.cs" />
+    <Compile Include="VRConnection\Commands\Scene\DataAttributes\SceneLoadDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Scene\DataAttributes\SceneSaveDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Scene\SceneGet.cs" />
+    <Compile Include="VRConnection\Commands\Scene\SceneLoad.cs" />
+    <Compile Include="VRConnection\Commands\Scene\SceneReset.cs" />
+    <Compile Include="VRConnection\Commands\Scene\SceneSave.cs" />
+    <Compile Include="VRConnection\Commands\SkyBox\DataAttributes\SkyBoxSetTimeDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\SkyBox\SkyBoxSetTime.cs" />
+    <Compile Include="VRConnection\Commands\Terrain\DataAttributes\SceneTerrainAddDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Terrain\DataAttributes\SceneTerrainGetHeightDataAttribute.cs" />
+    <Compile Include="VRConnection\Commands\Terrain\SceneTerrainAdd.cs" />
+    <Compile Include="VRConnection\Commands\Terrain\SceneTerrainGetHeight.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BLEConnection\Translator\ITranslatorStategy.cs" />
+    <Compile Include="BLEConnection\Translator\Translator.cs" />
+    <Compile Include="VRConnection\Panel\ChatModule\Chat.cs" />
+    <Compile Include="VRConnection\Panel\DisplayPanel.cs" />
+    <Compile Include="VRConnection\Panel\ChatModule\ChatMessage.cs" />
+    <Compile Include="VRConnection\Panel\HUDModule\HUD.cs" />
+    <Compile Include="VRConnection\Player\PlayerManager.cs" />
+    <Compile Include="VRConnection\World\Scenes\FarmScene.cs" />
+    <Compile Include="VRConnection\World\Scenes\Scene.cs" />
+    <Compile Include="VRConnection\World\SceneBuilder.cs" />
+    <Compile Include="VRConnection\VrClientConnection.cs" />
+    <Compile Include="VRConnection\VrManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
